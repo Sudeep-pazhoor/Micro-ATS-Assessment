@@ -1,0 +1,20 @@
+# Dependencies
+Backend/node_modules/
+Frontend/node_modules/
+
+# Environment files
+.env
+Backend/.env
+Frontend/.env
+
+# Logs
+*.log
+logs/
+
+# IDE files
+.vscode/
+.idea/
+
+# Build output
+dist/
+build/
