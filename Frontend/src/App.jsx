@@ -5,7 +5,7 @@ import './App.css';
 
 const API_BASE = (
   import.meta.env.VITE_API_BASE_URL ||
-  (import.meta.env.DEV ? 'http://localhost:5000' : 'https://micro-ats-assessment.onrender.com')
+  (import.meta.env.DEV ? 'http://localhost:5000' : 'https://micro-ats-assessment-1.onrender.com')
 ).replace(/\/$/, '');
 const API = API_BASE.endsWith('/api') ? API_BASE : `${API_BASE}/api`;
 const STATUSES = ['Applied', 'Technical Round', 'Offered', 'Rejected'];
