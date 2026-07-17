@@ -166,7 +166,7 @@ export default function App() {
             <label>Full Name</label>
             <input
               type="text"
-              placeholder="e.g. Jane Doe"
+              placeholder="e.g. Ajith S"
               value={newCandidate.name}
               onChange={e => setNewCandidate({ name: e.target.value })}
               onKeyDown={e => e.key === 'Enter' && addCandidate()}
