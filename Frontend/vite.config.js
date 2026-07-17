@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      '/api': 'https://micro-ats-assessment.onrender.com/'
+      '/api': 'https://micro-ats-assessment-1.onrender.com'
     }
   }
 });
