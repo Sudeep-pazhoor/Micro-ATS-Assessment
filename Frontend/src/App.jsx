@@ -3,7 +3,11 @@ import axios from 'axios';
 import { DateTime } from 'luxon';
 import './App.css';
 
-const API = '/api';
+const API_BASE = (
+  import.meta.env.VITE_API_BASE_URL ||
+  (import.meta.env.DEV ? 'http://localhost:5000' : 'https://micro-ats-assessment.onrender.com')
+).replace(/\/$/, '');
+const API = API_BASE.endsWith('/api') ? API_BASE : `${API_BASE}/api`;
 const STATUSES = ['Applied', 'Technical Round', 'Offered', 'Rejected'];
 
 function formatLocal(iso) {
